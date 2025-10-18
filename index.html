@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Webpage</title>
+    <!-- Link to external CSS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header id="header">
+      <div class="header-rectangle container">
+        <div class="header-left">
+            Tbileasy
+        </div>
+        <div class="header-center">
+            <a href="#">Home</a>
+            <a href="#">Gallery</a>
+            <a href="#">About Us</a>
+            <a href="#">Contact</a>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero-section">
+        <div class="hero-text">
+          <h1>Tbilisi</h1>
+          <p>Your perfect location awaits</p>
+        </div>
+      </section>
+
+      <section class="about-us container">
+        <div class="about-content">
+          <h2>About Us</h2>
+          <p> What is it like to visit Tbilisi for the first time? - Exciting, but also takes time, energy, and finances to adapt.<br>
+              Our mission is simple: Make life in Tbilisi easier for every newcomer. Instead of spending hours figuring out how public transport works, where to buy groceries, or which pharmacy to choose, you will be able to access all of this information easily.
+          </p>
+          <a href="x.html" class="btn">Learn More</a>
+        </div>
+      </section>
+
+      <section class="gallery container">
+        <div class="gallery-content">
+            <h2>Places to visit</h2>
+
+            <div class="gallery-items">
+                <div class="gallery-item">
+                    <img src="public\images\mtatsminda.avif" alt="Mtatsminda">
+                    <h3>Mtatsminda</h3>
+                    <p>Mtatsminda park located on mountain and looking over the city. Here you can find different attractions..</p>
+                </div>
+
+                <div class="gallery-item">
+                    <img src="public/images/rike-park.avif" alt="Rike">
+                    <h3>Rike Park</h3>
+                    <p>Located next to the river Mtkvari, perfect place to walk around, relax and feel chilling breeze coming from the river.</p>
+                </div>
+
+                <div class="gallery-item">
+                    <img src="public/images/monuments.avif" alt="Monuments">
+                    <h3>Chronicles of Georgia</h3>
+                    <p>Also known as Georgian Stonehenge, looking over the Tbilisi Sea. On those columns you may find historical events of Georgia.</p>
+                </div>
+            </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+        <div class="footer-content container">
+            <div class="footer-brand">
+                <h3>TBILEASY</h3>
+            </div>
+
+            <div class="contact">
+              <p>EMAIL</p>
+              <a href="mailto:voodoo@gmail.com">voodoo@gmail.com</a>
+            </div>
+
+            <div class="socials">
+              <p>SOCIALS</p>
+              
+              <a href="https://www.facebook.com/tbileasy.ge" target="_blank" aria-label="Facebook">
+                <svg width="20" height="20" viewBox="0 0 320 512" fill="currentColor" style="vertical-align: middle;">
+                  <path d="M279.14 288l14.22-92.66h-88.91V127.91c0-25.35 12.42-50.06 52.24-50.06H293V6.26
+                    S259.5 0 225.36 0c-73.22 0-121.36 44.38-121.36 
+                    124.72v70.62H22.89V288h81.11v224h100.17V288z"/>
+                </svg>
+                
+                <span>
+                  Tbileasy
+                </span>
+              </a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript for header scroll behavior -->
+    <script>
+        let lastScroll = 0;
+        const header = document.getElementById('header');
+
+        window.addEventListener('scroll', () => {
+            const currentScroll = window.pageYOffset;
+            if (currentScroll > lastScroll) {
+                // Scrolling down
+                header.style.top = '-100px'; // Hide header
+            } else {
+                // Scrolling up
+                header.style.top = '0';               
+            }
+            lastScroll = currentScroll;
+        });
+    </script>
+
+</body>
+</html>

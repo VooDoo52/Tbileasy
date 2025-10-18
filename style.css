@@ -1,0 +1,362 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  min-height: 100%;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background: #fff;
+  color: #000;
+}
+
+
+/* Basic body styling */
+body {
+    margin: 0;
+    /* font-family: Arial, sans-serif; */
+    font-family: "Outfit", sans-serif;
+    background-color: #F4E1C6;
+    color: #362E22;
+}
+
+/* Header styling */
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #F4E1C6;
+    color: #362E22;
+    padding: 20px 0px;
+    text-align: center;
+    transition: top 0.3s;
+    z-index: 1000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-height: 100px;
+}
+
+/* Main content styling */
+main {
+    padding: 0; /* Top padding to avoid overlap with header */
+    /*max-width: 1000px;*/
+    margin: 0 auto;
+}
+
+/* Footer styling */
+footer {
+    background-color: #F4E1C6;
+    color: #362E22;
+    padding: 60px 0 40px;
+    margin-top: 40px;
+}
+
+.footer-content {
+    margin: 0 auto;
+    padding: 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.footer-brand h3 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin: 0 0 40px 0;
+    color: #362E22;
+}
+
+.footer-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 60px;
+}
+
+.footer-contact p {
+    margin: 0 0 12px 0;
+    font-size: 1rem;
+    color: #362E22;
+}
+
+.footer-contact p:last-child {
+    margin-bottom: 0;
+}
+
+.footer-content .contact p {
+    max-width: 200px;
+    padding-bottom: 10px;
+    margin: 0;
+    border-bottom: 1px double #362E22;
+} 
+
+.footer-content .contact a {
+    margin-top: 10px;
+    display: block;
+    color: black;
+    text-decoration: none;
+} 
+
+.footer-content .socials p {
+    max-width: 200px;
+    padding-bottom: 10px;
+    margin: 0;
+    border-bottom: 1px double #362E22;
+} 
+
+.footer-content .socials a {
+    margin-top: 10px;
+    display: block;
+    color: white;
+    text-decoration: none;
+} 
+
+.footer-content .socials a svg {
+    background-color: #1877f3; /* Facebook blue */
+    width: 25px;
+    height: 25px;
+    padding: 3px;
+    border-radius: 5px;
+} 
+
+.footer-content .socials a span {
+    color: black;
+    padding-left: 5px;
+    margin-top: 2px;
+} 
+
+.footer-links {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.footer-links a {
+    color: #362E22;
+    text-decoration: underline;
+    font-size: 1rem;
+    transition: opacity 0.3s ease;
+}
+
+.footer-links a:hover {
+    opacity: 0.7;
+}
+
+h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    main {
+        padding: 120px 15px 40px;
+    }
+
+    header {
+        padding: 15px;
+    }
+}
+
+.container {
+    max-width: 1400px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+    box-sizing: border-box;
+}
+
+@media (max-width: 768px) {
+    .container {
+        max-width: 100%;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+}
+
+/* Rectangle inside footer */
+.header-rectangle {
+    background-color: #C1560E;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0; /* center rectangle */
+    padding: 20px 40px;
+    border-radius: 8px;
+    color: #F4E1C6;
+    /* flex-wrap: wrap; */
+}
+
+.header-left {
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+.header-center {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.header-center a {
+    color: #F4E1C6;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.header-center a:hover {
+    text-decoration: underline;
+}
+
+/* Hero Section */
+.hero-section {
+    margin-top: 60px;
+    position: relative;
+    background-image: url('public/images/tbilisi.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 600px; /* you can adjust */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #F4E1C6; /* text color over image */
+    text-align: center;
+    font-family: "Outfit", sans-serif;
+}
+
+.hero-section .hero-text h1 {
+    font-size: 8rem;
+    margin: 0;
+    text-shadow: 2px 2px 8px rgba(0,0,0,0.6);
+    text-transform: uppercase;
+}
+
+.hero-section .hero-text p {
+    font-size: 2rem;
+    font-weight: 600;
+    margin-top: 0px;
+    padding-left: 20px;
+    text-shadow: 1px 1px 4px rgba(0,0,0,0.5);
+}
+
+/* About Us Section */
+.about-us {
+    padding: 10px 0px;
+    background-color: #F4E1C6;
+    display: flex;
+    justify-content: flex-start; /* align content to the left */
+    
+}
+
+.about-us .content {
+    max-width: 1000px;
+    text-align: left; /* align text to left */
+}
+
+.about-content p {
+    font-size: 1.2rem;
+    line-height: 1.8;
+    margin-bottom: 30px;
+    white-space: pre-line; /* keeps line breaks in text */
+}
+
+/* Button styling */
+.about-content .btn {
+    display: inline-block;
+    padding: 12px 30px;
+    background-color: transparent;  /* no fill */
+    color: #362E22;                 /* text color */
+    border: 1px solid #362E22;      /* border color */
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 21px;
+    transition: all 0.3s;
+}
+
+.about-content .btn:hover {
+    background-color: #362E22;      /* fill color */
+    color: #F4E1C6;                 /* text color */
+    border-color: #362E22;          /* keep border same */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .about-content p {
+        font-size: 1rem;
+    }
+}
+
+/*images*/
+/* Gallery Section */
+.gallery {
+    background-color: #F4E1C6;
+    padding: 60px 0px;
+}
+
+.gallery-content {
+    margin: 0;
+    text-align: left;
+    color: #362E22;
+}
+
+/* Gallery items layout */
+.gallery-items {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 equal columns */
+    gap: 40px; /* equal space between images and edges */
+    margin: 0 auto; /* centers the grid */
+    box-sizing: border-box;
+    padding: 0; /* adds equal space on left and right edges */
+}
+
+/* Each gallery item */
+.gallery-item {
+    /* text-align: center; */
+    color: #362E22;
+}
+
+.gallery-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.gallery-item h3 {
+    margin: 15px 0 10px 0;
+    font-size: 1.6rem;
+}
+
+.gallery-item p {
+    font-size: 1rem;
+    margin-top: 0px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .gallery-item {
+        flex: 1 1 100%; /* Stack vertically on smaller screens */
+    }
+    
+    .footer-bottom {
+        flex-direction: column;
+        gap: 30px;
+    }
+    
+    .footer-brand h3 {
+        font-size: 2rem;
+        margin-bottom: 30px;
+    }
+    
+    .footer-content {
+        padding: 0 15px;
+    }
+}
